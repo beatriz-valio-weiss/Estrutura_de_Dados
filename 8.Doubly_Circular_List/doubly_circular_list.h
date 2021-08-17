@@ -1,5 +1,5 @@
 //! Copyright [2021] <BEATRIZ VALIO WEISS>
-//! Nota desse codigo 99/100
+//! Nota desse codigo 100/100
 
 #ifndef STRUCTURES_DOUBLY_CIRCULAR_LIST_H
 #define STRUCTURES_DOUBLY_CIRCULAR_LIST_H
@@ -179,7 +179,8 @@ void structures::DoublyCircularList<T>::push_front(const T& data) {
 }
 
 template<typename T>
-void structures::DoublyCircularList<T>::insert(const T& data, std::size_t index) {
+void structures::DoublyCircularList<T>::
+insert(const T& data, std::size_t index) {
     if (index > size_) {
         throw std::out_of_range("Indice invalido!");
     } else if (index == 0) {
